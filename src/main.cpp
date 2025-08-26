@@ -8,8 +8,7 @@ int main() {
     return -1;
   }
 
-  GLFWwindow *window =
-      glfwCreateWindow(800, 600, "Meu Jogo OpenGL", NULL, NULL);
+  GLFWwindow *window = glfwCreateWindow(800, 600, "Voxel", NULL, NULL);
   if (!window) {
     std::cerr << "Erro ao criar janela" << std::endl;
     glfwTerminate();
@@ -23,7 +22,7 @@ int main() {
   }
 
   while (!glfwWindowShouldClose(window)) {
-    glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+    glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
     glClear(GL_COLOR_BUFFER_BIT);
 
     glfwSwapBuffers(window);
